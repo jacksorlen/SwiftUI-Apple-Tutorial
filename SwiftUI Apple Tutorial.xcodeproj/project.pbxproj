@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		80BD5C7D25E0607900BA1432 /* SwiftUI_Apple_TutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BD5C7C25E0607900BA1432 /* SwiftUI_Apple_TutorialApp.swift */; };
+		80AC14C125E2B0CB0081EB52 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AC14C025E2B0CB0081EB52 /* CircleImageView.swift */; };
+		80AC14C525E2B21E0081EB52 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AC14C425E2B21E0081EB52 /* MapView.swift */; };
+		80BD5C7D25E0607900BA1432 /* LandmarksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BD5C7C25E0607900BA1432 /* LandmarksApp.swift */; };
 		80BD5C7F25E0607900BA1432 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BD5C7E25E0607900BA1432 /* ContentView.swift */; };
 		80BD5C8125E0607C00BA1432 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80BD5C8025E0607C00BA1432 /* Assets.xcassets */; };
 		80BD5C8425E0607C00BA1432 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80BD5C8325E0607C00BA1432 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		80AC14C025E2B0CB0081EB52 /* CircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
+		80AC14C425E2B21E0081EB52 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		80BD5C7925E0607900BA1432 /* SwiftUI Apple Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Apple Tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		80BD5C7C25E0607900BA1432 /* SwiftUI_Apple_TutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Apple_TutorialApp.swift; sourceTree = "<group>"; };
+		80BD5C7C25E0607900BA1432 /* LandmarksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksApp.swift; sourceTree = "<group>"; };
 		80BD5C7E25E0607900BA1432 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		80BD5C8025E0607C00BA1432 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80BD5C8325E0607C00BA1432 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -33,6 +37,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		80AC14BE25E2B0930081EB52 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				80BD5C7E25E0607900BA1432 /* ContentView.swift */,
+				80AC14C025E2B0CB0081EB52 /* CircleImageView.swift */,
+				80AC14C425E2B21E0081EB52 /* MapView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		80BD5C7025E0607900BA1432 = {
 			isa = PBXGroup;
 			children = (
@@ -52,8 +66,8 @@
 		80BD5C7B25E0607900BA1432 /* SwiftUI Apple Tutorial */ = {
 			isa = PBXGroup;
 			children = (
-				80BD5C7C25E0607900BA1432 /* SwiftUI_Apple_TutorialApp.swift */,
-				80BD5C7E25E0607900BA1432 /* ContentView.swift */,
+				80AC14BE25E2B0930081EB52 /* View */,
+				80BD5C7C25E0607900BA1432 /* LandmarksApp.swift */,
 				80BD5C8025E0607C00BA1432 /* Assets.xcassets */,
 				80BD5C8525E0607C00BA1432 /* Info.plist */,
 				80BD5C8225E0607C00BA1432 /* Preview Content */,
@@ -139,7 +153,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				80BD5C7F25E0607900BA1432 /* ContentView.swift in Sources */,
-				80BD5C7D25E0607900BA1432 /* SwiftUI_Apple_TutorialApp.swift in Sources */,
+				80AC14C525E2B21E0081EB52 /* MapView.swift in Sources */,
+				80BD5C7D25E0607900BA1432 /* LandmarksApp.swift in Sources */,
+				80AC14C125E2B0CB0081EB52 /* CircleImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
