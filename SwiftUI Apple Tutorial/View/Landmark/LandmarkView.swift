@@ -2,10 +2,15 @@ import SwiftUI
 
 struct LandmarkView: View {
     
+    @EnvironmentObject var modelData: ModelData
     var landmark: Landmark
     
     init(_ landmark: Landmark) {
         self.landmark = landmark
+    }
+    
+    var landmarkIndex: Int {
+        modelData.landmarks.firstIndex(where: { $0.id == landmark.id })!
     }
     
     var body: some View {
@@ -20,9 +25,12 @@ struct LandmarkView: View {
             
             VStack {
                 VStack(alignment: .leading) {
-                    
-                    Text(landmark.name)
-                        .font(.title)
+                    HStack {
+                        Text(landmark.name)
+                            .font(.title)
+                            .foregroundColor(.primary)
+                        FavoriteButton(isSet: $modelData.landmarks[landmarkIndex].isFavorite)
+                    }
                     
                     HStack {
                         Text(landmark.park)
@@ -52,6 +60,6 @@ struct LandmarkView: View {
 
 struct LandmarkView_Previews: PreviewProvider {
     static var previews: some View {
-        LandmarkView(landmarks[1])
+        LandmarkView(ModelData().landmarks[1])
     }
 }
